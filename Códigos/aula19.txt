@@ -1,0 +1,63 @@
+***** js.js *****
+
+$("#fundoGame").append("<div id='placar'></div>");
+
+
+***** estilos.css *****
+
+#placar {
+	width: 450px;
+	height: 50px;
+	position: absolute;
+	left: 5px;
+	top: 590px;
+}
+
+h2 {
+	font-family:Titulo;
+	font-size:20px;
+	color:#FFF
+}
+
+
+***** js.js *****
+
+var pontos=0;
+var salvos=0;
+var perdidos=0;
+
+
+***** js.js *****
+**** Disparo com inimigo 1 ****
+
+pontos=pontos+100;
+
+***** js.js *****
+***** disparo com inimigo 2 *****
+
+pontos=pontos+50;
+
+***** js.js *****
+***** jogador e amigo ******
+
+salvos++;
+
+***** js.js *****
+***** inimigo 2 encontrar amigo ****
+
+perdidos++;
+
+***** js.js *****
+
+placar();
+
+***** js.js *****
+**** chamar no loop ****
+
+function placar() {
+	
+	$("#placar").html("<h2> Pontos: " + pontos + " Salvos: " + salvos + " Perdidos: " + perdidos + "</h2>");
+	
+} //fim da fun��o placar()
+
+
